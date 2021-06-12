@@ -24,7 +24,7 @@ function draw() {
   if (mouseIsPressed) {
     translate(width / 2, height / 2);
 
-    const segmentCount = map(mouseY, 0, height, 2, 20);
+    const segmentCount = Math.round(map(mouseY, 0, height, 2, 20));
     const radius = mouseX - width / 2 + 0.5;
     const segmentAngle = TWO_PI / segmentCount;
 
