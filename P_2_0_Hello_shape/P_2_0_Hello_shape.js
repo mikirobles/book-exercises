@@ -14,10 +14,10 @@ let colorGenerateMode = GRADIENT;
 let opacity = LOW_OPACITY;
 
 function setup() {
-  colorMode(HSB, width / 8, 100, 100, 1);
+  colorMode(HSB, width, 100, 100, 1);
   background(0, 0, 100)
   createCanvas(800, 800);
-  frameRate(44);
+  frameRate(60);
 }
 
 function draw() {
